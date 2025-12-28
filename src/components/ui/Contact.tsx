@@ -14,6 +14,14 @@ export default function Contact() {
     const [isFormOpen, setIsFormOpen] = useState(false);
 
     useEffect(() => {
+        if (isFormOpen && formRef.current) {
+            setTimeout(() => {
+                formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+            }, 100);
+        }
+    }, [isFormOpen]);
+
+    useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.fromTo(containerRef.current,
                 { opacity: 0, y: 50 },
