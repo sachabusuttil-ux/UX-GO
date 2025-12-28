@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
+import { useLenis } from "lenis/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
@@ -12,14 +13,20 @@ export default function Contact() {
     const formRef = useRef<HTMLFormElement>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isFormOpen, setIsFormOpen] = useState(false);
+    const lenis = useLenis();
 
     useEffect(() => {
-        if (isFormOpen && formRef.current) {
+        if (isFormOpen && formRef.current && lenis) {
             setTimeout(() => {
-                formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-            }, 100);
+                if (formRef.current) {
+                    lenis.scrollTo(formRef.current, {
+                        offset: -100,
+                        duration: 1.5,
+                    });
+                }
+            }, 300);
         }
-    }, [isFormOpen]);
+    }, [isFormOpen, lenis]);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
