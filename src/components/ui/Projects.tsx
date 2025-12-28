@@ -9,12 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-    { id: 1, title: "Neon Pulse", category: "Web Design", aspect: "aspect-[4/3]", color: "from-purple-500 to-indigo-900" },
-    { id: 2, title: "Quantum Leaps", category: "Branding", aspect: "aspect-[3/4]", color: "from-blue-500 to-cyan-900" },
-    { id: 3, title: "Velvet Void", category: "Motion", aspect: "aspect-square", color: "from-red-500 to-orange-900" },
-    { id: 4, title: "Cyber Nature", category: "3D Art", aspect: "aspect-[3/5]", color: "from-emerald-500 to-teal-900" },
-    { id: 5, title: "Urban Echo", category: "Photography", aspect: "aspect-[16/9]", color: "from-gray-500 to-slate-900" },
-    { id: 6, title: "Liquid Dreams", category: "Interactive", aspect: "aspect-[4/5]", color: "from-pink-500 to-rose-900" },
+    { id: 1, title: "Nutri AI", category: "DA & Identité Visuelle", aspect: "aspect-[4/3]", image: "/projects/nutri-ai-logo.jpg" },
+    { id: 2, title: "Nutri AI", category: "UX/UI Design", aspect: "aspect-[9/16]", image: "/projects/nutri-ai-app.jpg" },
+    { id: 3, title: "Next2You", category: "DA & Identité Visuelle", aspect: "aspect-square", image: "/projects/next2you-web.jpg" },
+    { id: 4, title: "Next2You", category: "UX/UI Design", aspect: "aspect-[3/5]", image: "/projects/cookie-logo.jpg" },
+    { id: 5, title: "Un Cookie d'Amour", category: "DA & Identité Visuelle", aspect: "aspect-square", image: "/projects/next2you-logo.jpg" },
+    { id: 6, title: "L3C", category: "UX/UI Design", aspect: "aspect-[2/3]", image: "/projects/l3c-web.jpg" },
 ];
 
 export default function Projects() {
@@ -24,7 +24,7 @@ export default function Projects() {
     useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.fromTo(itemsRef.current,
-                { opacity: 0, y: 100 },
+                { opacity: 0, y: 50 },
                 {
                     opacity: 1,
                     y: 0,
@@ -59,20 +59,30 @@ export default function Projects() {
                             className={cn("group relative bg-secondary/50 overflow-hidden border border-white/10 break-inside-avoid rounded-xl", project.aspect)}
                         >
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-20 opacity-100 flex flex-col justify-end p-8">
-                                <span className="text-primary text-sm uppercase tracking-widest mb-2 font-bold">{project.category}</span>
+                                <span className="text-white text-sm uppercase tracking-widest mb-2 font-bold">{project.category}</span>
                                 <h3 className="text-2xl md:text-3xl font-display font-bold uppercase">{project.title}</h3>
                             </div>
 
-                            {/* Placeholder Gradient Content */}
-                            <div className={cn("absolute inset-0 bg-gradient-to-br", project.color)} />
+                            {/* Project Image */}
+                            {project.image ? (
+                                <div className="absolute inset-0 z-0">
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        priority={i < 3}
+                                        className="object-cover transition-transform duration-700 md:group-hover:scale-105"
+                                    />
+                                </div>
+                            ) : (
+                                <div className="absolute inset-0 bg-neutral-900 z-0" />
+                            )}
 
                             {/* Static Overlay */}
-                            <div className="absolute inset-0 bg-black/10" />
+                            <div className="absolute inset-0 bg-black/10 z-10" />
                         </div>
                     ))}
                 </div>
-
-
             </div>
         </section>
     );
