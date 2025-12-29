@@ -11,22 +11,22 @@ const testimonials = [
     {
         id: 1,
         quote: "L'équipe UX&GO a totalement transformé notre approche produit. Le design est non seulement magnifique, mais il convertit.",
-        author: "ALEX RIBEIRO",
-        role: "CEO, NEON PULSE",
+        author: "Charly B.",
+        role: "Next2You",
         image: "/avatar1.jpg"
     },
     {
         id: 2,
         quote: "Une rapidité d'exécution incroyable grâce au No-Code. Nous avons lancé notre MVP en 3 semaines au lieu de 3 mois.",
-        author: "SARAH CHEN",
-        role: "FOUNDER, QUANTUM",
+        author: "Ines M.",
+        role: "Cookie D'amour",
         image: "/avatar2.jpg"
     },
     {
         id: 3,
         quote: "L'expertise 'Glassmorphism' qu'ils apportent est unique. Notre plateforme n'a jamais été aussi moderne et fluide.",
-        author: "DAVID MILLER",
-        role: "CTO, VELVET TECH",
+        author: "Nassir E.",
+        role: "Nutri AI",
         image: "/avatar3.jpg"
     }
 ];
