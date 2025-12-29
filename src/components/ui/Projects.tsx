@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
     { id: 1, title: "Nutri AI", category: "DA & Identité Visuelle", aspect: "aspect-[4/3]", image: "/projects/nutri-ai-logo.jpg" },
     { id: 2, title: "Nutri AI", category: "UX/UI Design", aspect: "aspect-[9/16]", image: "/projects/nutri-ai-app.jpg" },
-    { id: 3, title: "Next2You", category: "DA & Identité Visuelle", aspect: "aspect-square", image: "/projects/next2you-web.jpg" },
-    { id: 4, title: "Next2You", category: "UX/UI Design", aspect: "aspect-[3/5]", image: "/projects/cookie-logo.jpg" },
-    { id: 5, title: "Un Cookie d'Amour", category: "DA & Identité Visuelle", aspect: "aspect-square", image: "/projects/next2you-logo.jpg" },
+    { id: 3, title: "Next2You", category: "DA & Identité Visuelle", aspect: "aspect-square", image: "/projects/next2you-logo.jpg" },
+    { id: 4, title: "Next2You", category: "UX/UI Design", aspect: "aspect-[3/5]", image: "/projects/next2you-web.jpg" },
+    { id: 5, title: "Un Cookie d'Amour", category: "DA & Identité Visuelle", aspect: "aspect-square", image: "/projects/cookie-logo.jpg" },
     { id: 6, title: "L3C", category: "UX/UI Design", aspect: "aspect-[2/3]", image: "/projects/l3c-web.jpg" },
 ];
 
