@@ -69,10 +69,15 @@ export default function Manifesto() {
                 <span className="block text-primary text-sm tracking-[0.3em] font-sans font-bold uppercase mb-10 text-center">Manifesto</span>
 
                 {/* Max-width constrained to force approx 3 lines on desktop */}
-                <h2 ref={textRef} className="text-[4vw] md:text-[5vw] leading-[1.3] font-display font-medium text-foreground text-center text-balance mb-12 max-w-5xl">
+                <h2
+                    ref={textRef}
+                    aria-label="Votre produit mérite une expérience sur-mesure, pensée pour vos utilisateurs."
+                    className="text-[4vw] md:text-[5vw] leading-[1.3] font-display font-medium text-foreground text-center text-balance mb-12 max-w-5xl"
+                >
                     {segments.map((seg, i) => (
                         <span
                             key={i}
+                            aria-hidden="true"
                             className="anim-segment inline-block mx-[0.15em] perspective-1000" // Outer wrapper for GSAP
                         >
                             <span className={cn(

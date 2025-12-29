@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="fr" className="dark">
       <body className={cn(epilogue.variable, syne.variable, "bg-background text-foreground antialiased font-sans")}>
         <CustomCursor />
         <SmoothScroll>

@@ -109,7 +109,8 @@ export default function Contact() {
                                 name="name"
                                 id="name"
                                 required
-                                className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/10 transition-all font-sans"
+                                aria-required="true"
+                                className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/20 transition-all font-sans"
                                 placeholder="Votre nom"
                             />
                         </div>
@@ -121,7 +122,8 @@ export default function Contact() {
                                 name="email"
                                 id="email"
                                 required
-                                className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/10 transition-all font-sans"
+                                aria-required="true"
+                                className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/20 transition-all font-sans"
                                 placeholder="votre@email.com"
                             />
                         </div>
@@ -133,7 +135,7 @@ export default function Contact() {
                             <select
                                 name="subject"
                                 id="subject"
-                                className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black focus:outline-none focus:ring-2 focus:ring-black/10 transition-all font-sans appearance-none cursor-pointer"
+                                className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black focus:outline-none focus:ring-2 focus:ring-black/20 transition-all font-sans appearance-none cursor-pointer"
                             >
                                 <option value="Projet Design">Projet Design</option>
                                 <option value="Développement">Développement</option>
@@ -153,8 +155,9 @@ export default function Contact() {
                             name="message"
                             id="message"
                             required
+                            aria-required="true"
                             rows={6}
-                            className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/10 transition-all font-sans resize-none"
+                            className="w-full bg-neutral-100 border-none rounded-lg px-5 py-4 text-black placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/20 transition-all font-sans resize-none"
                             placeholder="Dites-nous tout..."
                         ></textarea>
                     </div>
@@ -163,7 +166,7 @@ export default function Contact() {
                         type="submit"
                         disabled={isSubmitting}
                         className={cn(
-                            "py-4 px-12 rounded-full font-sans uppercase font-bold tracking-widest transition-all duration-300 border border-black",
+                            "py-4 px-12 rounded-full font-sans uppercase font-bold tracking-widest transition-all duration-300 border border-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2",
                             isSubmitting
                                 ? "bg-black/10 text-black cursor-not-allowed"
                                 : "bg-black text-white hover:bg-white hover:text-black"

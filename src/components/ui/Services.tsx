@@ -56,7 +56,12 @@ export default function Services() {
                             ref={(el) => { itemsRef.current[index] = el }}
                             onMouseEnter={() => setActive(index)}
                             onMouseLeave={() => setActive(null)}
-                            className="group relative border-b border-white/20 py-16 cursor-pointer overflow-hidden transition-all duration-500 hover:bg-white/5"
+                            onFocus={() => setActive(index)}
+                            onBlur={() => setActive(null)}
+                            tabIndex={0}
+                            role="button"
+                            aria-expanded={active === index}
+                            className="group relative border-b border-white/20 py-16 cursor-pointer overflow-hidden transition-all duration-500 hover:bg-white/5 focus-visible:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary"
                         >
                             <div className="flex flex-col md:flex-row md:items-center relative z-10 pointer-events-none md:gap-24">
                                 <span className="text-xl font-sans text-accent-2 mb-4 md:mb-0">({item.id})</span>

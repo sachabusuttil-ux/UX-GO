@@ -60,6 +60,7 @@ export default function Navbar() {
         <div className="hidden md:block fixed bottom-8 left-1/2 -translate-x-1/2 z-[90]">
             <nav
                 ref={navRef}
+                aria-label="Menu de navigation principal"
                 className={cn(
                     "flex items-center gap-1 px-2 py-2 rounded-full border backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-colors duration-500",
                     isDarkTheme
@@ -73,10 +74,10 @@ export default function Navbar() {
                         href={item.target}
                         onClick={(e) => scrollToSection(e, item.target)}
                         className={cn(
-                            "relative px-4 py-2 rounded-full text-xs font-sans uppercase tracking-widest transition-all duration-300 group overflow-hidden",
+                            "relative px-4 py-2 rounded-full text-xs font-sans uppercase tracking-widest transition-all duration-300 group overflow-hidden focus-visible:outline-none focus-visible:ring-2",
                             isDarkTheme
-                                ? "text-white/70 md:hover:text-white md:hover:bg-white/10"
-                                : "text-black/70 md:hover:text-black md:hover:bg-black/10"
+                                ? "text-white/70 md:hover:text-white md:hover:bg-white/10 focus-visible:ring-white"
+                                : "text-black/70 md:hover:text-black md:hover:bg-black/10 focus-visible:ring-black"
                         )}
                     >
                         <span className="relative z-10">{item.label}</span>
