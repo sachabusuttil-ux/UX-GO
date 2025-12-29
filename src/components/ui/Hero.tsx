@@ -69,7 +69,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section ref={containerRef} className="relative h-screen w-full overflow-hidden bg-[#5E14DF] flex items-center justify-center">
+        <section ref={containerRef} className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-primary via-accent to-white flex items-center justify-center">
 
 
 
@@ -107,7 +107,7 @@ export default function Hero() {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-10 right-10 text-xs font-sans tracking-widest uppercase opacity-40 animate-pulse z-30 text-white">
+            <div className="absolute bottom-10 right-10 text-xs font-sans tracking-widest uppercase opacity-40 animate-pulse z-30 text-black">
                 SCROLLEZ POUR EXPLORER
             </div>
 
