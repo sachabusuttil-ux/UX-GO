@@ -71,18 +71,21 @@ export default function Services() {
                         >
                             <div className="flex flex-col md:flex-row md:items-center relative z-10 pointer-events-none md:gap-24">
                                 <span className="text-xl font-sans text-accent-2 mb-4 md:mb-0">({item.id})</span>
+
+                                {/* Description - Visible on mobile/focus/hover, placed above title on mobile */}
+                                <p className={cn(
+                                    "text-lg font-sans text-gray-400 mb-4 md:mb-0 max-w-sm transition-opacity duration-300 md:mx-auto md:pr-24 order-2 md:order-3",
+                                    active === index ? "opacity-100" : "opacity-100 md:opacity-0"
+                                )}>
+                                    {item.desc}
+                                </p>
+
                                 <h3 className={cn(
-                                    "text-4xl md:text-7xl font-display font-semibold uppercase transition-all duration-300",
+                                    "text-4xl md:text-7xl font-display font-semibold uppercase transition-all duration-300 order-3 md:order-2",
                                     active === index ? "text-primary translate-x-4" : "text-foreground"
                                 )}>
                                     {item.title}
                                 </h3>
-                                <p className={cn(
-                                    "text-lg font-sans text-gray-400 mt-4 md:mt-0 max-w-sm transition-opacity duration-300 md:mx-auto md:pr-24",
-                                    active === index ? "opacity-100" : "opacity-0 md:opacity-0"
-                                )}>
-                                    {item.desc}
-                                </p>
                             </div>
                         </div>
                     ))}

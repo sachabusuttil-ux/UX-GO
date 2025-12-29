@@ -72,7 +72,7 @@ export default function Manifesto() {
                 <h2
                     ref={textRef}
                     aria-label="Votre produit mérite une expérience sur-mesure, pensée pour vos utilisateurs."
-                    className="text-[4vw] md:text-[5vw] leading-[1.3] font-display font-medium text-foreground text-center text-balance mb-12 max-w-5xl"
+                    className="text-[8vw] md:text-[5vw] leading-[1.3] font-display font-medium text-foreground text-center text-balance mb-12 max-w-5xl"
                 >
                     {segments.map((seg, i) => (
                         <span

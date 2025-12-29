@@ -85,27 +85,27 @@ export default function Hero() {
 
                 <h1
                     aria-label="UX ET GO STUDIO"
-                    className="relative flex flex-col items-center justify-center text-[12vw] md:text-[11vw] leading-[0.85] font-display font-black uppercase tracking-tighter w-full text-white"
+                    className="relative flex flex-col items-center justify-center text-[18vw] md:text-[11vw] leading-[0.85] font-display font-black uppercase tracking-tighter w-full text-white"
                 >
                     <div ref={uxgoRef} aria-hidden="true" className="overflow-hidden px-4"><span className="char inline-block">U</span><span className="char inline-block">X</span><span className="char inline-block text-[#0D0123]">&</span><span className="char inline-block">G</span><span className="char inline-block">O</span></div>
 
                     {/* Hollow 'STUDIO' with Glass Fill appearance */}
-                    <div ref={studioRef} aria-hidden="true" className="group overflow-hidden relative mt-2 tracking-normal bg-[#4B11B3] border border-white/10 backdrop-blur-sm shadow-[0_4px_24px_rgba(216,180,254,0.1)] rounded-xl px-8 py-4 -rotate-2 transform transition-all duration-500 md:hover:rotate-0 md:hover:scale-105 md:hover:bg-white cursor-none">
+                    <div ref={studioRef} aria-hidden="true" className="group overflow-hidden relative mt-2 tracking-normal bg-[#4B11B3] border border-white/10 backdrop-blur-sm shadow-[0_4px_24px_rgba(216,180,254,0.1)] rounded-xl px-6 py-3 md:px-8 md:py-4 -rotate-2 transform transition-all duration-500 md:hover:rotate-0 md:hover:scale-105 md:hover:bg-white cursor-none">
                         <span className="char inline-block text-white transition-colors duration-300 md:group-hover:text-[#5E14DF]">S</span>
                         <span className="char inline-block text-white transition-colors duration-300 md:group-hover:text-[#5E14DF]">T</span>
                         <span className="char inline-block text-white transition-colors duration-300 md:group-hover:text-[#5E14DF]">U</span>
                         <span className="char inline-block text-white transition-colors duration-300 md:group-hover:text-[#5E14DF]">D</span>
                         <span className="char inline-block text-white transition-colors duration-300 md:group-hover:text-[#5E14DF]">I</span>
                         <span className="char inline-block text-white transition-colors duration-300 md:group-hover:text-[#5E14DF]">O</span>
-                        {/* Blinking Cursor */}
-                        <span className="inline-block w-[3px] h-[0.7em] ml-1 align-baseline bg-white animate-blink"></span>
+                        {/* Blinking Cursor - Hidden on mobile */}
+                        <span className="hidden md:inline-block w-[3px] h-[0.7em] ml-1 align-baseline bg-white animate-blink"></span>
                     </div>
                 </h1>
 
                 <div className="mt-12 inline-block">
-                    <p className="flex items-center justify-center gap-6 text-sm md:text-xl font-sans font-medium tracking-[0.5em] uppercase text-white/80">
+                    <p className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 text-sm md:text-xl font-sans font-medium tracking-[0.5em] uppercase text-white/80">
                         <span>Expérience Digitale</span>
-                        <span className="text-white animate-pulse text-3xl leading-none pt-1">•</span>
+                        <span className="text-white animate-pulse text-xl md:text-3xl leading-none pt-1">•</span>
                         <span>No-Code</span>
                     </p>
                 </div>
