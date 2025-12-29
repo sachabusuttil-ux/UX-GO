@@ -58,6 +58,12 @@ export default function Services() {
                             onMouseLeave={() => setActive(null)}
                             onFocus={() => setActive(index)}
                             onBlur={() => setActive(null)}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault();
+                                    setActive(active === index ? null : index);
+                                }
+                            }}
                             tabIndex={0}
                             role="button"
                             aria-expanded={active === index}

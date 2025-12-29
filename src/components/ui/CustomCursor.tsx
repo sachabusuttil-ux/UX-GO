@@ -95,6 +95,7 @@ export default function CustomCursor() {
         <>
             <div
                 ref={cursorRef}
+                aria-hidden="true"
                 className={cn(
                     "fixed top-0 left-0 w-3 h-3 border rounded-full pointer-events-none z-[100] -translate-x-1/2 -translate-y-1/2 transition-colors duration-300",
                     isDark ? "bg-white border-white" : "bg-black border-black"
@@ -102,6 +103,7 @@ export default function CustomCursor() {
             />
             <div
                 ref={followerRef}
+                aria-hidden="true"
                 className={cn(
                     "fixed top-0 left-0 w-10 h-10 border rounded-full pointer-events-none z-[99] -translate-x-1/2 -translate-y-1/2 transition-colors duration-300",
                     isDark ? "border-white/30" : "border-black/30"
