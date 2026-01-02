@@ -76,9 +76,15 @@ export default function Hero() {
             {/* Glass Frosted Text Container */}
             <div className="relative z-30 w-full px-4 text-center flex flex-col items-center">
                 {/* Icon */}
-
-
-                <h1
+                <div className="mb-8 overflow-hidden">
+                    <Image
+                        src="/hero-icon.png"
+                        alt="UX&GO Icon"
+                        width={80}
+                        height={80}
+                        className="w-16 h-16 md:w-20 md:h-20 object-contain brightness-0 invert opacity-90"
+                    />
+                </div>                <h1
                     aria-label="UX ET GO STUDIO"
                     className="relative flex flex-col items-center justify-center text-[18vw] md:text-[11vw] leading-[0.85] font-display font-black uppercase tracking-tighter w-full text-white"
                 >
