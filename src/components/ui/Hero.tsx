@@ -82,7 +82,7 @@ export default function Hero() {
                     aria-label="UX ET GO STUDIO"
                     className="relative flex flex-col items-center justify-center text-[18vw] md:text-[11vw] leading-[0.85] font-display font-black uppercase tracking-tighter w-full text-white"
                 >
-                    <div ref={uxgoRef} aria-hidden="true" className="overflow-hidden px-4"><span className="char inline-block">U</span><span className="char inline-block">X</span><span className="char inline-block text-[#111111]">&</span><span className="char inline-block">G</span><span className="char inline-block">O</span></div>
+                    <div ref={uxgoRef} aria-hidden="true" className="overflow-hidden px-4"><span className="char inline-block">U</span><span className="char inline-block">X</span><span className="char inline-block text-white">&</span><span className="char inline-block">G</span><span className="char inline-block">O</span></div>
 
                     {/* Hollow 'STUDIO' with Glass Fill appearance */}
                     <div ref={studioRef} aria-hidden="true" className="group overflow-hidden relative mt-2 tracking-normal bg-[#111111] border border-white/10 backdrop-blur-sm shadow-[0_4px_24px_rgba(216,180,254,0.1)] rounded-xl px-6 py-3 md:px-8 md:py-4 -rotate-2 transform transition-all duration-500 md:hover:rotate-0 md:hover:scale-105 md:hover:bg-white cursor-none">
