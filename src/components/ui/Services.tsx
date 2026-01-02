@@ -74,7 +74,7 @@ export default function Services() {
 
                                 <h3 className={cn(
                                     "text-4xl md:text-7xl font-display font-semibold uppercase transition-all duration-300",
-                                    active === index ? "text-primary translate-x-4" : "text-foreground"
+                                    active === index ? "text-primary-gradient translate-x-4" : "text-foreground"
                                 )}>
                                     {item.title}
                                 </h3>
