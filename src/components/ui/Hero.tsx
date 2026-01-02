@@ -82,7 +82,7 @@ export default function Hero() {
                         alt="UX&GO Icon"
                         width={80}
                         height={80}
-                        className="w-16 h-16 md:w-20 md:h-20 object-contain brightness-0 opacity-90"
+                        className="w-24 h-24 md:w-32 md:h-32 object-contain brightness-0 opacity-90"
                     />
                 </div>                <h1
                     aria-label="UX ET GO STUDIO"
@@ -91,13 +91,13 @@ export default function Hero() {
                     <div ref={uxgoRef} aria-hidden="true" className="overflow-hidden px-4"><span className="char inline-block">U</span><span className="char inline-block">X</span><span className="char inline-block text-white">&</span><span className="char inline-block">G</span><span className="char inline-block">O</span></div>
 
                     {/* Hollow 'STUDIO' with Glass Fill appearance */}
-                    <div ref={studioRef} aria-hidden="true" className="group overflow-hidden relative mt-2 tracking-normal bg-[#111111] border border-white/10 backdrop-blur-sm shadow-[0_4px_24px_rgba(216,180,254,0.1)] rounded-xl px-6 py-3 md:px-8 md:py-4 -rotate-2 transform transition-all duration-500 md:hover:rotate-0 md:hover:scale-105 md:hover:bg-white cursor-none">
-                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-[#111111]">S</span>
-                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-[#111111]">T</span>
-                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-[#111111]">U</span>
-                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-[#111111]">D</span>
-                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-[#111111]">I</span>
-                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-[#111111]">O</span>
+                    <div ref={studioRef} aria-hidden="true" className="group overflow-hidden relative mt-2 tracking-normal bg-[#111111] border border-white/10 backdrop-blur-sm shadow-[0_4px_24px_rgba(216,180,254,0.1)] rounded-xl px-6 py-3 md:px-8 md:py-4 -rotate-2 transform transition-all duration-500 cursor-none">
+                        <span className="char inline-block text-primary-gradient">S</span>
+                        <span className="char inline-block text-primary-gradient">T</span>
+                        <span className="char inline-block text-primary-gradient">U</span>
+                        <span className="char inline-block text-primary-gradient">D</span>
+                        <span className="char inline-block text-primary-gradient">I</span>
+                        <span className="char inline-block text-primary-gradient">O</span>
                         {/* Blinking Cursor - Hidden on mobile */}
                         <span className="hidden md:inline-block w-[3px] h-[0.7em] ml-1 align-baseline bg-white animate-blink"></span>
                     </div>
