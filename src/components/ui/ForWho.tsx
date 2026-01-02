@@ -72,7 +72,7 @@ export default function ForWho() {
                         >
                             <div className="absolute top-0 right-0 p-4 opacity-50 font-sans text-sm tracking-widest">{client.id}</div>
 
-                            <h3 className="text-3xl md:text-4xl font-display font-bold uppercase mb-6 text-primary group-hover:text-white transition-colors duration-300">
+                            <h3 className="text-3xl md:text-4xl font-display font-bold uppercase mb-6 text-primary-gradient group-hover:text-white transition-colors duration-300">
                                 {client.title}
                             </h3>
                             <p className="text-lg font-sans text-accent-2 leading-relaxed">
@@ -80,7 +80,7 @@ export default function ForWho() {
                             </p>
 
                             {/* Hover Effect Line */}
-                            <div className="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                            <div className="absolute bottom-0 left-0 w-full h-1 bg-primary-gradient transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                         </div>
                     ))}
                 </div>

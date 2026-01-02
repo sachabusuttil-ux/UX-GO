@@ -69,7 +69,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center" style={{ background: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>
+        <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-primary-gradient">
 
 
 
@@ -86,12 +86,12 @@ export default function Hero() {
 
                     {/* Hollow 'STUDIO' with Glass Fill appearance */}
                     <div ref={studioRef} aria-hidden="true" className="group overflow-hidden relative mt-2 tracking-normal bg-[#111111] border border-white/10 backdrop-blur-sm shadow-[0_4px_24px_rgba(216,180,254,0.1)] rounded-xl px-6 py-3 md:px-8 md:py-4 -rotate-2 transform transition-all duration-500 md:hover:rotate-0 md:hover:scale-105 md:hover:bg-white cursor-none">
-                        <span className="char inline-block bg-clip-text text-transparent transition-colors duration-300 md:group-hover:text-[#5E14DF]" style={{ backgroundImage: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>S</span>
-                        <span className="char inline-block bg-clip-text text-transparent transition-colors duration-300 md:group-hover:text-[#5E14DF]" style={{ backgroundImage: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>T</span>
-                        <span className="char inline-block bg-clip-text text-transparent transition-colors duration-300 md:group-hover:text-[#5E14DF]" style={{ backgroundImage: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>U</span>
-                        <span className="char inline-block bg-clip-text text-transparent transition-colors duration-300 md:group-hover:text-[#5E14DF]" style={{ backgroundImage: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>D</span>
-                        <span className="char inline-block bg-clip-text text-transparent transition-colors duration-300 md:group-hover:text-[#5E14DF]" style={{ backgroundImage: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>I</span>
-                        <span className="char inline-block bg-clip-text text-transparent transition-colors duration-300 md:group-hover:text-[#5E14DF]" style={{ backgroundImage: 'radial-gradient(circle, #8555E7 0%, #A97AEE 100%)' }}>O</span>
+                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-white">S</span>
+                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-white">T</span>
+                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-white">U</span>
+                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-white">D</span>
+                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-white">I</span>
+                        <span className="char inline-block text-primary-gradient transition-colors duration-300 md:group-hover:text-white">O</span>
                         {/* Blinking Cursor - Hidden on mobile */}
                         <span className="hidden md:inline-block w-[3px] h-[0.7em] ml-1 align-baseline bg-white animate-blink"></span>
                     </div>

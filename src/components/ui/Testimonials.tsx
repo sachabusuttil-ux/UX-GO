@@ -81,7 +81,7 @@ export default function Testimonials() {
     };
 
     return (
-        <section ref={containerRef} className="relative w-full py-24 px-4 md:px-20 bg-[#5E14DF] text-foreground overflow-hidden">
+        <section ref={containerRef} className="relative w-full py-24 px-4 md:px-20 bg-primary-gradient text-foreground overflow-hidden">
             {/* Background Gradient/Glow for depth */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/20 pointer-events-none" />
             <div className="max-w-7xl mx-auto">

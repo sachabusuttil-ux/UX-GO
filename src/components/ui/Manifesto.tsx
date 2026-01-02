@@ -66,7 +66,7 @@ export default function Manifesto() {
     return (
         <section ref={containerRef} className="relative min-h-screen w-full bg-[#111111] flex flex-col items-center justify-center p-8 md:p-20">
             <div className="max-w-6xl mx-auto flex flex-col items-center">
-                <span className="block text-primary text-sm tracking-[0.3em] font-sans font-bold uppercase mb-10 text-center">Manifesto</span>
+                <span className="block text-primary-gradient text-sm tracking-[0.3em] font-sans font-bold uppercase mb-10 text-center">Manifesto</span>
 
                 {/* Max-width constrained to force approx 3 lines on desktop */}
                 <h2
@@ -83,7 +83,7 @@ export default function Manifesto() {
                             <span className={cn(
                                 "inline-block rounded-xl transition-all duration-300 origin-center backface-hidden",
                                 seg.highlight
-                                    ? "bg-white/5 border border-white/10 backdrop-blur-sm px-4 py-1 text-transparent bg-clip-text bg-gradient-to-br from-primary via-accent to-primary font-bold shadow-[0_4px_24px_rgba(92,21,218,0.15)] cursor-pointer hover:scale-110 hover:-rotate-2 hover:bg-primary hover:text-white hover:bg-clip-border hover:bg-none group transition-all duration-500 ease-out"
+                                    ? "bg-white/5 border border-white/10 backdrop-blur-sm px-4 py-1 text-primary-gradient font-bold shadow-[0_4px_24px_rgba(133,85,231,0.15)] cursor-pointer hover:scale-110 hover:-rotate-2 hover:bg-primary-gradient hover:text-white group transition-all duration-500 ease-out"
                                     : "text-foreground"
                             )}>
                                 {seg.text.trim()}

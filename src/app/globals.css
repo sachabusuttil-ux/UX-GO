@@ -17,6 +17,17 @@
   text-wrap: balance;
 }
 
+@utility bg-primary-gradient {
+  background: radial-gradient(circle, #8555E7 0%, #A97AEE 100%);
+}
+
+@utility text-primary-gradient {
+  background: radial-gradient(circle, #8555E7 0%, #A97AEE 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Custom Animations */
 .animate-blink {
   animation: blink 1s infinite;
